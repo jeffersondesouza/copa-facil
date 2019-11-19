@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,10 +15,31 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/header/headerSearch.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header class="cf-header">header</header>
+    <header class="cf-header">
+      <div class="cf-search">
+        <form class="cf-search-form">
+          <label for="search-input" class="cf-search-form__label"
+            >Procurando um campeonato?</label
+          >
+          <input
+            id="search-input"
+            class="cf-search-form__input"
+            placeholder="Digite o nome aqui"
+          />
+          <button class="cf-btn cf-btn--primary" type="submit">Buscar</button>
+        </form>
+      </div>
+      <div>
+        <a href="/" class="cf-brand">
+          <img src="./assets/img/logo.png" alt="" class="cf-brand__img" />
+        </a>
+      </div>
+    </header>
 
     <!-- BANNER -->
     <section class="cf-banner">banner</section>

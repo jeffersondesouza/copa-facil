@@ -1,0 +1,10 @@
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+.cf-title {
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
