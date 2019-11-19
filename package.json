@@ -4,7 +4,7 @@
   "description": "### Rodar Projeto",
   "main": "index.js",
   "scripts": {
-    "start": "npm live-server"
+    "start": "live-server"
   },
   "author": "",
   "license": "ISC",
