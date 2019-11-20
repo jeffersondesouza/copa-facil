@@ -1,9 +1,16 @@
 .cf-header-menu__btn {
   padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
   color: #ffffff;
   position: relative;
 }
 
+.cf-header-menu__btn:hover {
+  cursor: pointer;
+}
 
 .cf-header-menu__btn--first {
   margin-right: 1.5rem;
