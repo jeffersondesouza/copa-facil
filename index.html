@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/btn.css" />
+    <link rel="stylesheet" href="css/link.css" />
     <link rel="stylesheet" href="css/container.css" />
     <link rel="stylesheet" href="css/search/search.css" />
     <link rel="stylesheet" href="css/search/searchForm.css" />
@@ -59,6 +60,24 @@
 
     <link rel="stylesheet" href="css/main/main.css" />
     <link rel="stylesheet" href="css/main/main-content.css" />
+    <link rel="stylesheet" href="css/main/main-container.css" />
+
+    <link rel="stylesheet" href="css/matches/matches.css" />
+
+    <link rel="stylesheet" href="css/about/about.css" />
+    <link rel="stylesheet" href="css/about/about-schedule.css" />
+    <link rel="stylesheet" href="css/about/about-scheduleInfo.css" />
+    <link rel="stylesheet" href="css/about/about-scheduleTitle.css" />
+    <link rel="stylesheet" href="css/about/about-scheduleSubtitle.css" />
+    <link rel="stylesheet" href="css/about/about-scheduleIcon.css" />
+
+    <link rel="stylesheet" href="css/about/about-contact.css" />
+    <link rel="stylesheet" href="css/about/about-contactInfo.css" />
+    <link rel="stylesheet" href="css/about/about-contactItem.css" />
+    <link rel="stylesheet" href="css/about/about-contactIcon.css" />
+    <link rel="stylesheet" href="css/about/about-contactList.css" />
+    <link rel="stylesheet" href="css/about/about-attachmentsList.css" />
+    <link rel="stylesheet" href="css/about/about-attachmentsItem.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -163,7 +182,9 @@
           </header>
           <div class="cf-about__schedule">
             <div class="cf-about__schedule-info">
-              <i class="material-icons">calendar_today</i>
+              <div class="cf-about__schedule-icon">
+                <i class="material-icons">calendar_today</i>
+              </div>
               <div>
                 <div class="cf-about__schedule-title">início</div>
                 <div class="cf-about__schedule-subtitle">
@@ -172,7 +193,9 @@
               </div>
             </div>
             <div class="cf-about__schedule-info">
-              <i class="material-icons">calendar_today</i>
+              <div class="cf-about__schedule-icon">
+                <i class="material-icons">calendar_today</i>
+              </div>
               <div>
                 <div class="cf-about__schedule-title">término</div>
                 <div class="cf-about__schedule-subtitle">
@@ -181,39 +204,41 @@
               </div>
             </div>
             <div class="cf-about__schedule-info">
-              <i class="material-icons">calendar_today</i>
+              <div class="cf-about__schedule-icon">
+                <i class="material-icons">assignment_ind</i>
+              </div>
               <div>
                 <div class="cf-about__schedule-title">
                   organizador
                 </div>
                 <div class="cf-about__schedule-subtitle">
-                  Sábado, 28/09/2019
+                  JR Sports
                 </div>
               </div>
             </div>
           </div>
           <div class="cf-main__container">
-            <p class="cf-about__description">
+            <p>
               O melhor torneio de futsal amador do centro-sul fluminense!
             </p>
             <div class="cf-about__contact">
-              <h5 class="cf-subtitle">JR Sports</h5>
+              <h5 class="cf-subtitle">Contatos</h5>
               <ul class="cf-about__contact-list">
                 <li class="cf-about__contact-item">
-                  <i class="material-icons">message</i>
+                  <i class="material-icons cf-about__contact-icon">message</i>
                   <div class="cf-about__contact-info">JR Sports</div>
                 </li>
                 <li class="cf-about__contact-item">
-                  <i class="material-icons">email</i>
+                  <i class="material-icons cf-about__contact-icon">email</i>
                   <div class="cf-about__contact-info">JR Sports</div>
                 </li>
                 <li class="cf-about__contact-item">
-                  <i class="material-icons">phone</i>
+                  <i class="material-icons cf-about__contact-icon">phone</i>
                   <div class="cf-about__contact-info">JR Sports</div>
                 </li>
               </ul>
             </div>
-            <div class="cf-about__attachments">
+            <div>
               <h5 class="cf-subtitle">anexos</h5>
               <ul class="cf-about__attachments-list">
                 <li class="cf-about__attachments-item">

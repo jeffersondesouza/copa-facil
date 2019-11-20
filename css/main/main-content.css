@@ -1,5 +1,8 @@
 .cf-main__content {
   background: #ffffff;
   flex: 1;
-}
+  font-size: 0.875rem;
+  padding: 1.25rem 0 0 1rem;
+  background: pink;
 
+}
