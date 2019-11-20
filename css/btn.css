@@ -15,8 +15,10 @@
   background-color: #57bd5b;
 }
 
-
-
 .cf-btn--smal {
   padding: 5px 0.9375rem;
+}
+
+.cf-btn--blank {
+  background: none;
 }
