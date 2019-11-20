@@ -2,7 +2,6 @@
   border: none;
   border-radius: 4px;
   font-size: 0.875rem;
-  font-weight: 700;
   padding: 0.625rem 0.9375rem;
   transition: border .25s linear, color .25s linear, background-color .25s linear;
 }
@@ -11,6 +10,12 @@
   background-color: #4CAF50;
   color: #ffffff;
 }
+
+.cf-btn--primary:hover {
+  background-color: #57bd5b;
+}
+
+
 
 .cf-btn--smal {
   padding: 5px 0.9375rem;
