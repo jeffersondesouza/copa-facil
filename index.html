@@ -82,6 +82,22 @@
     <link rel="stylesheet" href="css/about/about-attachmentsList.css" />
     <link rel="stylesheet" href="css/about/about-attachmentsItem.css" />
     <link rel="stylesheet" href="css/map.css" />
+
+    <link rel="stylesheet" href="css/comments/comment.css" />
+    <link rel="stylesheet" href="css/comments/comments.css" />
+    <link rel="stylesheet" href="css/comments/comments-item.css" />
+    <link rel="stylesheet" href="css/comments/commentsForm.css" />
+    <link rel="stylesheet" href="css/comments/commentsForm-input.css" />
+    <link rel="stylesheet" href="css/comments/commentsForm-action.css" />
+
+    <link rel="stylesheet" href="css/comments/comment-avatar.css" />
+    <link rel="stylesheet" href="css/comments/comment-avatarImg.css" />
+    <link rel="stylesheet" href="css/comments/comment-body.css" />
+    <link rel="stylesheet" href="css/comments/comment-header.css" />
+    <link rel="stylesheet" href="css/comments/comment-msg.css" />
+
+    <link rel="stylesheet" href="css/comments/comment-headerTitle.css" />
+    <link rel="stylesheet" href="css/comments/comment-headerDate.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -322,24 +338,84 @@
           <header class="cf-main__section-header">
             <h4 class="cf-title">comentários</h4>
           </header>
-          <form class="cf-coments__form">
-            <textarea placeholder="Digite seu comentário"></textarea>
-            <div>
-              <button class="cf-btn cf-btn--primary">Enviar</button>
+          <form class="cf-comments-form">
+            <textarea
+              placeholder="Digite seu comentário"
+              class="cf-comments-form__input"
+            ></textarea>
+            <div class="cf-comments-form__action">
+              <button class="cf-btn cf-btn--primary cf-btn--small">
+                Enviar
+              </button>
             </div>
           </form>
-          <ul>
-            <li>
-              <div>
-                <div>
-                  <img src="/" />
-                </div>
-                <div>
-                  <header>
-                    <h6>João das Couves</h6>
-                    <time>25/10/2019 14:17</time>
+          <ul class="cf-comments">
+            <li class="cf-comments__item">
+              <div class="cf-comment">
+                <picture class="cf-comment__avatar">
+                  <img
+                    src="./assets/img/avatar.png"
+                    class="cf-comment__avatar-img"
+                  />
+                </picture>
+                <div class="cf-comment__body">
+                  <header class="cf-comment__header">
+                    <h6 class="cf-comment__header-title">João das Couves</h6>
+                    <time class="cf-comment__header-date"
+                      >25/10/2019 14:17</time
+                    >
                   </header>
-                  <p>
+                  <p class="cf-comment__msg">
+                    Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
+                    finis, bibendum egestas augue arcu ut est. Interagi no mé,
+                    cursus quis, vehicula ac nisi. Mais vale um bebadis
+                    conhecidiss, que um alcoolatra anonimis. Em pé sem cair,
+                    deitado sem dormir, sentado sem cochilar e fazendo pose.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cf-comments__item">
+              <div class="cf-comment">
+                <picture class="cf-comment__avatar">
+                  <img
+                    src="./assets/img/avatar.png"
+                    class="cf-comment__avatar-img"
+                  />
+                </picture>
+                <div class="cf-comment__body">
+                  <header class="cf-comment__header">
+                    <h6 class="cf-comment__header-title">João das Couves</h6>
+                    <time class="cf-comment__header-date"
+                      >25/10/2019 14:17</time
+                    >
+                  </header>
+                  <p class="cf-comment__msg">
+                    Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
+                    finis, bibendum egestas augue arcu ut est. Interagi no mé,
+                    cursus quis, vehicula ac nisi. Mais vale um bebadis
+                    conhecidiss, que um alcoolatra anonimis. Em pé sem cair,
+                    deitado sem dormir, sentado sem cochilar e fazendo pose.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="cf-comments__item">
+              <div class="cf-comment">
+                <picture class="cf-comment__avatar">
+                  <img
+                    src="./assets/img/avatar.png"
+                    class="cf-comment__avatar-img"
+                  />
+                </picture>
+                <div class="cf-comment__body">
+                  <header class="cf-comment__header">
+                    <h6 class="cf-comment__header-title">João das Couves</h6>
+                    <time class="cf-comment__header-date"
+                      >25/10/2019 14:17</time
+                    >
+                  </header>
+                  <p class="cf-comment__msg">
                     Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
                     finis, bibendum egestas augue arcu ut est. Interagi no mé,
                     cursus quis, vehicula ac nisi. Mais vale um bebadis
