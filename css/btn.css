@@ -20,5 +20,12 @@
 }
 
 .cf-btn--blank {
+  border: none;
+  outline: none;
   background: none;
+  padding-bottom: 0;
+}
+
+.cf-btn--blank:focus {
+  outline: none;
 }
