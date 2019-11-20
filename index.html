@@ -24,21 +24,23 @@
     <link rel="stylesheet" href="css/btn.css" />
     <link rel="stylesheet" href="css/container.css" />
 
-    <link rel="stylesheet" href="css/header/header.css" />
-    <link rel="stylesheet" href="css/header/headerSearch.css" />
     <link rel="stylesheet" href="css/search/search.css" />
     <link rel="stylesheet" href="css/search/searchForm.css" />
     <link rel="stylesheet" href="css/search/searchForm-input.css" />
     <link rel="stylesheet" href="css/search/searchForm-label.css" />
     <link rel="stylesheet" href="css/search/search-icon.css" />
     <link rel="stylesheet" href="css/search/searchToogle.css" />
+    <link rel="stylesheet" href="css/header/header.css" />
+    <link rel="stylesheet" href="css/header/headerContent.css" />
+    <link rel="stylesheet" href="css/header/headerLogo.css" />
+    <link rel="stylesheet" href="css/header/headerLogo-img.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="cf-header">
       <div class="cf-search">
         <!-- OBS: keep this this input and form on that order, because the css animation is using it  -->
-        <input id="search-toogle" type="checkbox" class="cf-search-toogle" />
+        <input id="search-toogle" type="checkbox" value="false" class="cf-search-toogle" />
         <form class="cf-search-form">
           <label for="search-input" class="cf-search-form__label"
             >Procurando um campeonato?</label
@@ -48,7 +50,9 @@
             class="cf-search-form__input"
             placeholder="Digite o nome aqui"
           />
-          <button class="cf-btn cf-btn--primary cf-btn--smal" type="submit">Buscar</button>
+          <button class="cf-btn cf-btn--primary cf-btn--smal" type="submit">
+            Buscar
+          </button>
         </form>
       </div>
       <div class="cf-container">

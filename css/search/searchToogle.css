@@ -3,5 +3,6 @@
 }
 
 .cf-search-toogle:checked~.cf-search-form {
-  background: red;
+  max-height: 40px;
+  width: unset;
 }
