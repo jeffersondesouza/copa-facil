@@ -5,6 +5,10 @@
       href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -15,13 +19,26 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/btn.css" />
+    <link rel="stylesheet" href="css/container.css" />
+
+    <link rel="stylesheet" href="css/header/header.css" />
     <link rel="stylesheet" href="css/header/headerSearch.css" />
+    <link rel="stylesheet" href="css/search/search.css" />
+    <link rel="stylesheet" href="css/search/searchForm.css" />
+    <link rel="stylesheet" href="css/search/searchForm-input.css" />
+    <link rel="stylesheet" href="css/search/searchForm-label.css" />
+    <link rel="stylesheet" href="css/search/search-icon.css" />
+    <link rel="stylesheet" href="css/search/searchToogle.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="cf-header">
       <div class="cf-search">
+        <!-- OBS: keep this this input and form on that order, because the css animation is using it  -->
+        <input id="search-toogle" type="checkbox" class="cf-search-toogle" />
         <form class="cf-search-form">
           <label for="search-input" class="cf-search-form__label"
             >Procurando um campeonato?</label
@@ -31,13 +48,40 @@
             class="cf-search-form__input"
             placeholder="Digite o nome aqui"
           />
-          <button class="cf-btn cf-btn--primary" type="submit">Buscar</button>
+          <button class="cf-btn cf-btn--primary cf-btn--smal" type="submit">Buscar</button>
         </form>
       </div>
-      <div>
-        <a href="/" class="cf-brand">
-          <img src="./assets/img/logo.png" alt="" class="cf-brand__img" />
-        </a>
+      <div class="cf-container">
+        <div class="cf-header-content">
+          <label for="search-toogle" class="cf-search__icon">
+            <i class="material-icons">search</i>
+          </label>
+          <a href="/" class="cf-header-logo">
+            <img
+              src="./assets/img/logo.png"
+              alt=""
+              class="cf-header-logo__img"
+            />
+            <span>Copa Facil</span>
+          </a>
+          <div class="cf-header-menu">
+            <div>
+              <select>
+                <option>Português</option>
+                <option>English</option>
+                <option>Español</option>
+                <option>Français</option>
+                <option>Italiano</option>
+              </select>
+            </div>
+            <div>
+              <span>exmplo@email.com</span>
+            </div>
+            <div>
+              <button>Sair</button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 

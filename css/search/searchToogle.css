@@ -1,0 +1,7 @@
+.cf-search-toogle {
+  display: none;
+}
+
+.cf-search-toogle:checked~.cf-search-form {
+  background: red;
+}
