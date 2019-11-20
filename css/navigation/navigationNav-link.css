@@ -1,0 +1,25 @@
+.cf-navigation__nav-link {
+  align-items: center;
+  border-right: 1px solid #212529;
+  color: #212529;
+  display: flex;
+  font-weight: 700;
+  font-size: 11px;
+  height: 3.75rem;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 10rem;
+}
+
+.cf-navigation__nav-link--first {
+  border-left: 1px solid #212529;
+}
+
+.cf-navigation__nav-link:hover {
+  color: #212529;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 900;
+}

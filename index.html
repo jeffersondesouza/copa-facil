@@ -37,6 +37,22 @@
     <link rel="stylesheet" href="css/header/headerMenu.css" />
     <link rel="stylesheet" href="css/header/headerMenu-btn.css" />
     <link rel="stylesheet" href="css/header/headerMenu-email.css" />
+    <link rel="stylesheet" href="css/banner/banner.css" />
+    <link rel="stylesheet" href="css/banner/banner-img.css" />
+
+    <link rel="stylesheet" href="css/navigation/navigation.css" />
+    <link rel="stylesheet" href="css/navigation/navigation-content.css" />
+    <link rel="stylesheet" href="css/navigation/navigation-league.css" />
+    <link rel="stylesheet" href="css/navigation/navigation-leagueName.css" />
+    <link
+      rel="stylesheet"
+      href="css/navigation/navigationLeagueFollowers.css"
+    />
+    <link rel="stylesheet" href="css/navigation/navigationNav.css" />
+    <link rel="stylesheet" href="css/navigation/navigationNav-items.css" />
+    <link rel="stylesheet" href="css/navigation/navigationNav-link.css" />
+
+    <link rel="stylesheet" href="css/footer/footer.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -58,7 +74,7 @@
             class="cf-search-form__input"
             placeholder="Digite o nome aqui"
           />
-          <button class="cf-btn cf-btn--primary cf-btn--smal" type="submit">
+          <button class="cf-btn cf-btn--primary cf-btn--small" type="submit">
             Buscar
           </button>
         </form>
@@ -94,10 +110,28 @@
     </header>
 
     <!-- BANNER -->
-    <section class="cf-banner">banner</section>
+    <section class="cf-banner">
+      <img src="./assets/img/banner.png" alt="" class="cf-banner__img" />
+    </section>
 
     <!-- NAVIGATION -->
-    <nav class="cf-navigation">nav</nav>
+    <section class="cf-navigation">
+      <div class="cf-container cf-navigation__content">
+        <div class="cf-navigation__league">
+          <h3 class="cf-navigation__league-name">Taça Paranaguá 2019</h3>
+          <p class="cf-navigation__league-followers">200 seguidores</p>
+        </div>
+        <nav class="cf-navigation__nav">
+          <ul class="cf-navigation__nav-items">
+            <li><a href="#" class="cf-navigation__nav-link cf-navigation__nav-link--first">início</a></li>
+            <li><a href="#" class="cf-navigation__nav-link">classificação</a></li>
+            <li><a href="#" class="cf-navigation__nav-link">fotos, vídeos e notícias</a></li>
+            <li><a href="#" class="cf-navigation__nav-link">ranking e votações</a></li>
+          </ul>
+        </nav>
+        <button class="cf-btn cf-btn--primary cf-btn--small">Seguir</button>
+      </div>
+    </section>
 
     <!-- AD SENSE -->
     <section class="cf-ad-sense">ad sense</section>

@@ -1,6 +1,6 @@
 .cf-header-content {
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 7.5px 0;
+  position: relative;
 }
