@@ -62,8 +62,6 @@
     <link rel="stylesheet" href="css/main/main-section.css" />
     <link rel="stylesheet" href="css/main/main-sectionHeader.css" />
 
-    <link rel="stylesheet" href="css/matches/matches.css" />
-
     <link rel="stylesheet" href="css/about/about-schedule.css" />
     <link rel="stylesheet" href="css/about/about-scheduleInfo.css" />
     <link rel="stylesheet" href="css/about/about-scheduleTitle.css" />
@@ -107,6 +105,15 @@
     <link rel="stylesheet" href="css/footer/footer-header.css" />
     <link rel="stylesheet" href="css/footer/footer-info.css" />
     <link rel="stylesheet" href="css/footer/footer-rights.css" />
+
+    <link rel="stylesheet" href="css/matches/matches.css" />
+    <link rel="stylesheet" href="css/matches/matchesWrapper.css" />
+    <link rel="stylesheet" href="css/match/match.css" />
+    <link rel="stylesheet" href="css/match/matches-form.css" />
+    <link rel="stylesheet" href="css/match/matches-list.css" />
+    <link rel="stylesheet" href="css/match/matches-header.css" />
+    <link rel="stylesheet" href="css/match/matches-formGroup.css" />
+    <link rel="stylesheet" href="css/match/matches-formLabel.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -439,68 +446,70 @@
       </div>
 
       <!-- JOGOS -->
-      <section class="cf-matches">
-        <header>
-          <h4 class="cf-title">jogos</h4>
-        </header>
-        <form class="cf-matches__form">
-          <div class="cf-matches__form-group">
-            <label class="cf-label">fases</label>
-            <select class="cf-btn"></select>
-          </div>
-          <div class="cf-matches__form-group">
-            <label class="cf-label">rodadas</label>
-            <select class="cf-btn"></select>
-          </div>
-        </form>
-        <ul>
-          <li>
-            <div class="cf-match">
-              <div>semifinal</div>
-              <div>
-                <div>
-                  <img src="/" />
-                  <span>Ibis</span>
-                </div>
-                <div>
-                  <div>encerrado</div>
-                  <div>
-                    <div>4</div>
-                    <div>x</div>
-                    <div>0</div>
-                  </div>
-                </div>
-                <div>
-                  <img src="/" />
-                  <span>Barcelona</span>
-                </div>
-              </div>
-              <footer>
-                <div>
-                  <div>
-                    <i class="material-icons">calendar_today</i>
-                    <div>Ginásio de Esportes Central</div>
-                  </div>
-                  <div>
-                    <i class="material-icons">calendar_today</i>
-                    <div>Qui, 10/09/2019 19:30</div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <i class="material-icons">calendar_today</i>
-                    <div>12</div>
-                  </div>
-                  <div>
-                    <i class="material-icons">calendar_today</i>
-                    <div>10</div>
-                  </div>
-                </div>
-              </footer>
+      <div class="cf-matches-wrapper">
+        <section class="cf-matches">
+          <header class="cf-matches__header">
+            <h4 class="cf-title">jogos</h4>
+          </header>
+          <form class="cf-matches__form">
+            <div class="cf-matches__form-group">
+              <label for="phase" class="cf-matches__form-label">fases</label>
+              <select id="phase" class="cf-btn cf-btn--control"></select>
             </div>
-          </li>
-        </ul>
-      </section>
+            <div class="cf-matches__form-group">
+              <label for="round" class="cf-matches__form-label">rodadas</label>
+              <select id="round" class="cf-btn cf-btn--control"></select>
+            </div>
+          </form>
+          <ul class="cf-matches__list">
+            <li>
+              <div class="cf-match">
+                <div>semifinal</div>
+                <div>
+                  <div>
+                    <img src="/" />
+                    <span>Ibis</span>
+                  </div>
+                  <div>
+                    <div>encerrado</div>
+                    <div>
+                      <div>4</div>
+                      <div>x</div>
+                      <div>0</div>
+                    </div>
+                  </div>
+                  <div>
+                    <img src="/" />
+                    <span>Barcelona</span>
+                  </div>
+                </div>
+                <footer>
+                  <div>
+                    <div>
+                      <i class="material-icons">calendar_today</i>
+                      <div>Ginásio de Esportes Central</div>
+                    </div>
+                    <div>
+                      <i class="material-icons">calendar_today</i>
+                      <div>Qui, 10/09/2019 19:30</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <i class="material-icons">calendar_today</i>
+                      <div>12</div>
+                    </div>
+                    <div>
+                      <i class="material-icons">calendar_today</i>
+                      <div>10</div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <!-- PATROCINADORES -->
