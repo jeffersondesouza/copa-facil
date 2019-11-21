@@ -2,6 +2,10 @@
   flex: 1;
 }
 
+.cf-navigation__nav a {
+  text-decoration: none;
+}
+
 
 /* default */
 @media screen and (min-width: 0) {
@@ -11,13 +15,13 @@
   }
 }
 
-/* 768px */
-@media screen and (min-width: 48rem) {
-  .cf-navigation__nav {}
-
-}
 
 /* 1024px */
 @media screen and (min-width: 64rem) {
-  .cf-navigation__nav {}
+
+  .cf-navigation__nav {
+    display: block;
+    width: unset;
+  }
+
 }

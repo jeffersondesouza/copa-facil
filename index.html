@@ -55,6 +55,13 @@
       href="css/navigation/navigationLeagueFollowers.css"
     />
     <link rel="stylesheet" href="css/navigation/navigationNav.css" />
+    <link rel="stylesheet" href="css/navigation/navigationNavMobile.css" />
+    <link
+      rel="stylesheet"
+      href="css/navigation/navigation-NavMobileToogle.css"
+    />
+    <link rel="stylesheet" href="css/navigation/navigation-menu.css" />
+
     <link rel="stylesheet" href="css/navigation/navigationNav-items.css" />
     <link rel="stylesheet" href="css/navigation/navigationNav-item.css" />
     <link rel="stylesheet" href="css/navigation/navigationNav-link.css" />
@@ -260,6 +267,37 @@
         </nav>
         <button class="cf-btn cf-btn--primary cf-btn--small">Seguir</button>
       </div>
+      <!-- mobile menu button -->
+      <input
+        id="toogle-menu"
+        class="cf-navigation__nav-mobile-toogle"
+        type="checkbox"
+        value="false"
+      />
+      <label for="toogle-menu" class="cf-navigation__menu">
+        <span class="material-icons">menu</span>
+      </label>
+      <!-- end mobile menu -->
+      <nav class="cf-navigation__nav-mobile">
+        <ul class="cf-navigation__nav-items">
+          <li class="cf-navigation__nav-item">
+            <a href="/" class="cf-navigation__nav-link">início</a>
+          </li>
+          <li class="cf-navigation__nav-item">
+            <a href="classificacao.html" class="cf-navigation__nav-link"
+              >classificação</a
+            >
+          </li>
+          <li class="cf-navigation__nav-item">
+            <a href="#" class="cf-navigation__nav-link"
+              >fotos, vídeos e notícias</a
+            >
+          </li>
+          <li class="cf-navigation__nav-item">
+            <a href="#" class="cf-navigation__nav-link">ranking e votações</a>
+          </li>
+        </ul>
+      </nav>
     </section>
 
     <!-- AD SENSE -->

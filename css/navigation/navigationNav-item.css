@@ -1,6 +1,5 @@
 .cf-navigation__nav-item {
   align-items: center;
-  border-right: 1px solid #212529;
   color: #212529;
   display: flex;
   font-weight: 700;
@@ -10,15 +9,47 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 10rem;
-}
-
-.cf-navigation__nav-item:first-child {
-  border-left: 1px solid #212529;
 }
 
 .cf-navigation__nav-item:hover {
   cursor: pointer;
   text-decoration: none;
   font-weight: 900;
+}
+
+
+/* default */
+@media screen and (min-width: 0) {
+  .cf-navigation__nav-item {
+    border-right: none;
+    border-bottom: 1px solid #212529;
+    width: 85%;
+
+  }
+
+  .cf-navigation__nav-item:first-child {
+    border-left: none;
+  }
+}
+
+/* 768px */
+@media screen and (min-width: 48rem) {
+  .cf-navigation__nav-item {
+    width: 18.75rem;
+  }
+}
+
+/* 1024px */
+@media screen and (min-width: 64rem) {
+
+  .cf-navigation__nav-item:first-child {
+    border-left: 1px solid #212529;
+
+  }
+
+  .cf-navigation__nav-item {
+    border-bottom: none;
+    border-left: 1px solid #212529;
+    width: 10rem;
+  }
 }
