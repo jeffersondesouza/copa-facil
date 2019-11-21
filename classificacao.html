@@ -22,6 +22,10 @@
 
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/btn.css" />
+    <link rel="stylesheet" href="css/toogle/toogle.css" />
+    <link rel="stylesheet" href="css/toogle/toogle-wrap.css" />
+    <link rel="stylesheet" href="css/toogle/toogle-label.css" />
+
     <link rel="stylesheet" href="css/link.css" />
     <link rel="stylesheet" href="css/container.css" />
     <link rel="stylesheet" href="css/search/search.css" />
@@ -164,6 +168,8 @@
     <link rel="stylesheet" href="css/live-match/liveMatch-infoBar.css" />
     <link rel="stylesheet" href="css/live-match/liveMatch-infoAlert.css" />
     <link rel="stylesheet" href="css/live-match/liveMatch-description.css" />
+
+    <link rel="stylesheet" href="css/raking/raking-filter.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -238,7 +244,9 @@
               <a href="/" class="cf-navigation__nav-link">início</a>
             </li>
             <li class="cf-navigation__nav-item">
-              <a href="classificacao.html" class="cf-navigation__nav-link">classificação</a>
+              <a href="/classificacao.html" class="cf-navigation__nav-link"
+                >classificação</a
+              >
             </li>
             <li class="cf-navigation__nav-item">
               <a href="#" class="cf-navigation__nav-link"
@@ -261,237 +269,18 @@
 
     <main class="cf-container cf-main">
       <div class="cf-main__content">
-        <!-- SOBRE -->
+        <!-- CLASSIFICAÇÂO de GRUPOS -->
         <section class="cf-main__section">
           <header class="cf-main__section-header">
-            <h4 class="cf-title">Sobre</h4>
+            <h4 class="cf-title">Classificação</h4>
           </header>
-          <div class="cf-about__schedule">
-            <div class="cf-about__schedule-info">
-              <div class="cf-about__schedule-icon">
-                <i class="material-icons">calendar_today</i>
-              </div>
-              <div>
-                <div class="cf-about__schedule-title">início</div>
-                <div class="cf-about__schedule-subtitle">
-                  Sábado, 28/09/2019
-                </div>
-              </div>
-            </div>
-            <div class="cf-about__schedule-info">
-              <div class="cf-about__schedule-icon">
-                <i class="material-icons">calendar_today</i>
-              </div>
-              <div>
-                <div class="cf-about__schedule-title">término</div>
-                <div class="cf-about__schedule-subtitle">
-                  Terça-feira, 28/09/2019
-                </div>
-              </div>
-            </div>
-            <div class="cf-about__schedule-info">
-              <div class="cf-about__schedule-icon">
-                <i class="material-icons">assignment_ind</i>
-              </div>
-              <div>
-                <div class="cf-about__schedule-title">
-                  organizador
-                </div>
-                <div class="cf-about__schedule-subtitle">
-                  JR Sports
-                </div>
-              </div>
-            </div>
+          <div class="cf-raking-filter">
+            <select id="phase" class="cf-btn cf-btn--control"></select>
+            <label class="cf-toogle-wrap">
+              <input class="cf-toogle" type="checkbox" />
+              <div class="cf-toogle-label">Classificação por Grupos</div>
+            </label>
           </div>
-          <div class="cf-main__container">
-            <p>
-              O melhor torneio de futsal amador do centro-sul fluminense!
-            </p>
-            <div class="cf-about__contact">
-              <h5 class="cf-subtitle">Contatos</h5>
-              <ul class="cf-about__contact-list">
-                <li class="cf-about__contact-item">
-                  <img
-                    src="./assets/img/ibis.png"
-                    alt=""
-                    class="cf-about__contact-logo"
-                  />
-                  <div class="cf-about__contact-info">JR Sports</div>
-                  <button
-                    class="cf-about__contact-action"
-                    title="Falar com Administrador"
-                  >
-                    <i class="material-icons cf-about__contact-icon">message</i>
-                  </button>
-                </li>
-                <li class="cf-about__contact-item">
-                  <i class="material-icons cf-about__contact-icon">email</i>
-                  <div class="cf-about__contact-info">exemplo@email.com</div>
-                </li>
-                <li class="cf-about__contact-item">
-                  <i class="material-icons cf-about__contact-icon">phone</i>
-                  <div class="cf-about__contact-info">(88) 9 8888-8888</div>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 class="cf-subtitle">anexos</h5>
-              <ul class="cf-about__attachments-list">
-                <li class="cf-about__attachments-item">
-                  <a href="/" class="cf-link">Regulamento</a>
-                </li>
-                <li class="cf-about__attachments-item">
-                  <a href="/" class="cf-link">Termos de Responsabilidade</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- REGRAS -->
-        <section class="cf-main__section">
-          <header class="cf-main__section-header">
-            <h4 class="cf-title">Regras do Campeonato</h4>
-          </header>
-          <div class="cf-main__container">
-            <p class="cf-paragraph">
-              ARTIGO 1º – A 13ª COPA EMPRESAS DA OLÉ , organizada por JUNIOR
-              DINA
-            </p>
-            <p class="cf-paragraph">
-              Eventos Esportivos, será disputada de conformidade com o presente
-              regulamento, com jogos na quadra de grama sintética do CENTRO
-              ESPORTIVO OLÉ E DO SELETO, tendo por objetivo
-            </p>
-          </div>
-        </section>
-
-        <!-- PREMIAÇÕES -->
-        <section class="cf-main__section">
-          <header class="cf-main__section-header">
-            <h4 class="cf-title">Premiações</h4>
-          </header>
-          <div class="cf-main__container">
-            <p class="cf-paragraph">
-              ARTIGO 1º – A 13ª COPA EMPRESAS DA OLÉ , organizada por JUNIOR
-              DINA
-            </p>
-            <p class="cf-paragraph">
-              Eventos Esportivos, será disputada de conformidade com o presente
-              regulamento, com jogos na quadra de grama sintética do CENTRO
-              ESPORTIVO OLÉ E DO SELETO, tendo por objetivo
-            </p>
-          </div>
-        </section>
-
-        <!-- LOCAL -->
-        <section class="cf-main__section">
-          <header class="cf-main__section-header">
-            <h4 class="cf-title">local</h4>
-          </header>
-          <div class="cf-main__container">
-            <p>
-              Quadra de esportes central
-            </p>
-          </div>
-          <div class="cf-map">
-            MAPA
-          </div>
-        </section>
-
-        <!-- COMENTÁRIOS -->
-        <section class="cf-main__section">
-          <header class="cf-main__section-header">
-            <h4 class="cf-title">comentários</h4>
-          </header>
-          <form class="cf-comments-form">
-            <textarea
-              placeholder="Digite seu comentário"
-              class="cf-comments-form__input"
-            ></textarea>
-            <div class="cf-comments-form__action">
-              <button class="cf-btn cf-btn--primary cf-btn--small">
-                Enviar
-              </button>
-            </div>
-          </form>
-          <ul class="cf-comments">
-            <li class="cf-comments__item">
-              <div class="cf-comment">
-                <figure class="cf-comment__avatar">
-                  <img
-                    src="./assets/img/avatar.png"
-                    class="cf-comment__avatar-img"
-                  />
-                </figure>
-                <div class="cf-comment__body">
-                  <header class="cf-comment__header">
-                    <h6 class="cf-comment__header-title">João das Couves</h6>
-                    <time class="cf-comment__header-date"
-                      >25/10/2019 14:17</time
-                    >
-                  </header>
-                  <p class="cf-comment__msg">
-                    Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
-                    finis, bibendum egestas augue arcu ut est. Interagi no mé,
-                    cursus quis, vehicula ac nisi. Mais vale um bebadis
-                    conhecidiss, que um alcoolatra anonimis. Em pé sem cair,
-                    deitado sem dormir, sentado sem cochilar e fazendo pose.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="cf-comments__item">
-              <div class="cf-comment">
-                <figure class="cf-comment__avatar">
-                  <img
-                    src="./assets/img/avatar.png"
-                    class="cf-comment__avatar-img"
-                  />
-                </figure>
-                <div class="cf-comment__body">
-                  <header class="cf-comment__header">
-                    <h6 class="cf-comment__header-title">João das Couves</h6>
-                    <time class="cf-comment__header-date"
-                      >25/10/2019 14:17</time
-                    >
-                  </header>
-                  <p class="cf-comment__msg">
-                    Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
-                    finis, bibendum egestas augue arcu ut est. Interagi no mé,
-                    cursus quis, vehicula ac nisi. Mais vale um bebadis
-                    conhecidiss, que um alcoolatra anonimis. Em pé sem cair,
-                    deitado sem dormir, sentado sem cochilar e fazendo pose.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="cf-comments__item">
-              <div class="cf-comment">
-                <figure class="cf-comment__avatar">
-                  <img
-                    src="./assets/img/avatar.png"
-                    class="cf-comment__avatar-img"
-                  />
-                </figure>
-                <div class="cf-comment__body">
-                  <header class="cf-comment__header">
-                    <h6 class="cf-comment__header-title">João das Couves</h6>
-                    <time class="cf-comment__header-date"
-                      >25/10/2019 14:17</time
-                    >
-                  </header>
-                  <p class="cf-comment__msg">
-                    Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
-                    finis, bibendum egestas augue arcu ut est. Interagi no mé,
-                    cursus quis, vehicula ac nisi. Mais vale um bebadis
-                    conhecidiss, que um alcoolatra anonimis. Em pé sem cair,
-                    deitado sem dormir, sentado sem cochilar e fazendo pose.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
         </section>
       </div>
 
