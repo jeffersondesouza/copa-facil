@@ -11,3 +11,9 @@
   font-size: 1rem;
   width: 16px;
 }
+
+.cf-match__footer--details {
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+  font-size: 10px;
+}

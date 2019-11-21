@@ -131,6 +131,7 @@
     <link rel="stylesheet" href="css/matches/match-socialItem.css" />
     <link rel="stylesheet" href="css/matches/match-scoreSeparator.css" />
     <link rel="stylesheet" href="css/matches/match-footerDetails.css" />
+    <link rel="stylesheet" href="css/matches/match-section.css" />
 
     <link rel="stylesheet" href="css/midia/midia.css" />
     <link rel="stylesheet" href="css/midia/midias.css" />
@@ -140,20 +141,153 @@
     <link rel="stylesheet" href="css/midia/midia-share.css" />
     <link rel="stylesheet" href="css/midia/midia-description.css" />
 
-    <div class="">
-      <img class="" src="http://abre.ai/auD2" />
-      <div class="">
-        <div class="">Sex, 20/10/2019</div>
-        <div>
-          <i class="material-icons">search</i>
-          <i class="material-icons">like</i>
-          <span>10</span>
-        </div>
-      </div>
-      <p class="">Início da grande final</p>
-    </div>
+    <link rel="stylesheet" href="css/squads/squads.css" />
+    <link rel="stylesheet" href="css/squads/squad.css" />
+    <link rel="stylesheet" href="css/squads/squad-player.css" />
+
+    <link rel="stylesheet" href="css/squads/squad-playerAvatar.css" />
+    <link rel="stylesheet" href="css/squads/squad-playerNumber.css" />
+    <link rel="stylesheet" href="css/squads/squad-playerName.css" />
+    <link rel="stylesheet" href="css/squads/squad-playeGol.css" />
+    <link rel="stylesheet" href="css/squads/squad-playerCard.css" />
+
+    <link rel="stylesheet" href="css/live-match/liveMatch.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatch-comment.css" />
   </head>
   <body>
+    <div class="cf-match cf-match--details">
+      <div class="cf-match__section">
+        <div class="cf-match__phase">semifinal</div>
+        <div class="cf-match__result">
+          <figure class="cf-match__team">
+            <img class="cf-match__team-logo" src="./assets/img/ibis.png" />
+            <figcaption>Ibis</figcaption>
+          </figure>
+          <div class="cf-match__score">
+            <div class="cf-match__score-status">encerrado</div>
+            <div>4</div>
+            <div class="cf-match__score-separator">X</div>
+            <div>0</div>
+          </div>
+          <figure class="cf-match__team">
+            <img class="cf-match__team-logo" src="./assets/img/barca.png" />
+            <figcaption>Barcelona</figcaption>
+          </figure>
+        </div>
+        <footer class="cf-match__footer cf-match__footer--details">
+          <div class="cf-match__location">
+            <i class="material-icons">place</i>
+            <div>Ginásio de Esportes Central</div>
+          </div>
+          <div class="cf-match__location">
+            <i class="material-icons">calendar_today</i>
+            <div>Qui, 10/09/2019 19:30</div>
+          </div>
+        </footer>
+      </div>
+      <div class="cf-match__section">
+        <p>
+          Quadra de esportes central
+        </p>
+        <div class="cf-map">
+          MAPA
+        </div>
+      </div>
+      <div class="cf-match__section">
+        <h4 class="cf-title">
+          jogadores
+        </h4>
+        <div class="cf-squads">
+          <div class="cf-squad">
+            <div class="cf-squad__player">
+              <img
+                class="cf-squad__player-avatar"
+                src="./assets/img/avatar.png"
+              />
+              <div class="cf-squad__player-number">1</div>
+              <div class="cf-squad__player-name">Marcos Aranha</div>
+            </div>
+            <div class="cf-squad__player">
+              <img
+                class="cf-squad__player-avatar"
+                src="./assets/img/avatar.png"
+              />
+              <div class="cf-squad__player-number">1</div>
+              <div class="cf-squad__player-name">Aranha</div>
+              <div class="cf-squad__player-gol"></div>
+              <div
+                class="cf-squad__player-card cf-squad__player-card--yerllow"
+              ></div>
+              <div
+                class="cf-squad__player-card cf-squad__player-card--red"
+              ></div>
+              <div
+                class="cf-squad__player-card cf-squad__player-card--blue"
+              ></div>
+            </div>
+            <div class="cf-squad__player">
+              <img
+                class="cf-squad__player-avatar"
+                src="./assets/img/avatar.png"
+              />
+              <div class="cf-squad__player-number">10</div>
+              <div class="cf-squad__player-name">Marcos</div>
+              <img class="cf-squad__player-gol" src="./assets/img/ball.svg" />
+              <div
+                class="cf-squad__player-card cf-squad__player-card--yerllow"
+              ></div>
+              <div
+                class="cf-squad__player-card cf-squad__player-card--red"
+              ></div>
+              <div
+                class="cf-squad__player-card cf-squad__player-card--blue"
+              ></div>
+            </div>
+          </div>
+          <div class="cf-squad">
+            <div class="cf-squad__player">
+              <img
+                class="cf-squad__player-avatar"
+                src="./assets/img/avatar.png"
+              />
+              <div class="cf-squad__player-number">1</div>
+              <div class="cf-squad__player-name">Marcos Aranha</div>
+            </div>
+            <div class="cf-squad__player">
+              <img
+                class="cf-squad__player-avatar"
+                src="./assets/img/avatar.png"
+              />
+              <div class="cf-squad__player-number">1</div>
+              <div class="cf-squad__player-name">Marcos Aranha</div>
+              <div class="cf-squad__player-gol"></div>
+            </div>
+            <div class="cf-squad__player">
+              <img
+                class="cf-squad__player-avatar"
+                src="./assets/img/avatar.png"
+              />
+              <div class="cf-squad__player-number">1</div>
+              <div class="cf-squad__player-name">Marcos Aranha</div>
+              <div class="cf-squad__player-gol"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cf-match__section">
+        <h4 class="cf-title">
+          lances
+        </h4>
+        <ul class="cf-live-match">
+          <li class="cf-live-match__comment">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- HEADER -->
     <header class="cf-header">
       <div class="cf-search">
@@ -626,7 +760,9 @@
               >
                 <!-- TAB COMENTÁRIOS -->
                 <section class="cf-main__section">
-                  <header class="cf-main__section-header cf-main__section-header--spaced">
+                  <header
+                    class="cf-main__section-header cf-main__section-header--spaced"
+                  >
                     <h4 class="cf-title">comentários</h4>
                   </header>
                   <form class="cf-comments-form cf-comments-form--small">
@@ -752,38 +888,38 @@
                     </div>
                   </li>
                   <li>
-                      <div class="cf-midia">
-                        <img class="cf-midia__img" src="http://abre.ai/auD2" />
-                        <div class="cf-midia__info">
-                          <div class="cf-midia__date">Sex, 20/10/2019</div>
-                          <div class="cf-midia__share">
-                            <i class="material-icons">share</i>
-                            <i class="material-icons">thumb_up</i>
-                            <span>10</span>
-                          </div>
+                    <div class="cf-midia">
+                      <img class="cf-midia__img" src="http://abre.ai/auD2" />
+                      <div class="cf-midia__info">
+                        <div class="cf-midia__date">Sex, 20/10/2019</div>
+                        <div class="cf-midia__share">
+                          <i class="material-icons">share</i>
+                          <i class="material-icons">thumb_up</i>
+                          <span>10</span>
                         </div>
-                        <p class="cf-midia__description">
-                          Início da grande final
-                        </p>
                       </div>
-                    </li>
+                      <p class="cf-midia__description">
+                        Início da grande final
+                      </p>
+                    </div>
+                  </li>
 
-                    <li>
-                        <div class="cf-midia">
-                          <img class="cf-midia__img" src="http://abre.ai/auD2" />
-                          <div class="cf-midia__info">
-                            <div class="cf-midia__date">Sex, 20/10/2019</div>
-                            <div class="cf-midia__share">
-                              <i class="material-icons">share</i>
-                              <i class="material-icons">thumb_up</i>
-                              <span>10</span>
-                            </div>
-                          </div>
-                          <p class="cf-midia__description">
-                            Início da grande final
-                          </p>
+                  <li>
+                    <div class="cf-midia">
+                      <img class="cf-midia__img" src="http://abre.ai/auD2" />
+                      <div class="cf-midia__info">
+                        <div class="cf-midia__date">Sex, 20/10/2019</div>
+                        <div class="cf-midia__share">
+                          <i class="material-icons">share</i>
+                          <i class="material-icons">thumb_up</i>
+                          <span>10</span>
                         </div>
-                      </li>
+                      </div>
+                      <p class="cf-midia__description">
+                        Início da grande final
+                      </p>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
