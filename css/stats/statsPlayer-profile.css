@@ -1,0 +1,6 @@
+.cf-stats-player__profile {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 0.75rem;
+}
