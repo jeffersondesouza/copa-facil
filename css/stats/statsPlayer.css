@@ -1,0 +1,11 @@
+.cf-stats-player {
+  align-items: center;
+  border-top: 0.5px solid #DFDFDF;
+  display: flex;
+  height: 5rem;
+  padding: 0 1.25rem;
+}
+
+.cf-stats-player:last-child {
+  border-bottom: 0.5px solid #DFDFDF;
+}
