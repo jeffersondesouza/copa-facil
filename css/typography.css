@@ -17,3 +17,7 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
 }
+
+.cf-uppercase {
+  text-transform: uppercase;
+}
