@@ -1,6 +1,7 @@
 .cf-sponsor {
   display: block;
-  width: 9.375rem;
   font-size: 10px;
+  margin-left: 1rem;
   text-align: center;
+  width: 9.375rem;
 }
