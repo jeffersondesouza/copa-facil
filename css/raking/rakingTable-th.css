@@ -1,0 +1,12 @@
+.cf-raking-table__th {
+  border-bottom: 1px solid #dfdfdf;
+  color: #606060;
+  font-size: 10px;
+  height: 1.875rem;
+  text-align: center;
+  min-width: 1.5625rem;
+}
+
+.cf-raking-table__th--left {
+  text-align: left;
+}

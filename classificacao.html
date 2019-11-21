@@ -20,8 +20,10 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/btn.css" />
+    <link rel="stylesheet" href="css/img-responsive.css" />
     <link rel="stylesheet" href="css/toogle/toogle.css" />
     <link rel="stylesheet" href="css/toogle/toogle-wrap.css" />
     <link rel="stylesheet" href="css/toogle/toogle-label.css" />
@@ -73,31 +75,6 @@
     <link rel="stylesheet" href="css/about/about-scheduleIcon.css" />
     <link rel="stylesheet" href="css/about/aboutContact-logo.css" />
     <link rel="stylesheet" href="css/about/about-contactAction.css" />
-
-    <link rel="stylesheet" href="css/about/about-contact.css" />
-    <link rel="stylesheet" href="css/about/about-contactInfo.css" />
-    <link rel="stylesheet" href="css/about/about-contactItem.css" />
-    <link rel="stylesheet" href="css/about/about-contactIcon.css" />
-    <link rel="stylesheet" href="css/about/about-contactList.css" />
-    <link rel="stylesheet" href="css/about/about-attachmentsList.css" />
-    <link rel="stylesheet" href="css/about/about-attachmentsItem.css" />
-    <link rel="stylesheet" href="css/map.css" />
-
-    <link rel="stylesheet" href="css/comments/comment.css" />
-    <link rel="stylesheet" href="css/comments/comments.css" />
-    <link rel="stylesheet" href="css/comments/comments-item.css" />
-    <link rel="stylesheet" href="css/comments/commentsForm.css" />
-    <link rel="stylesheet" href="css/comments/commentsForm-input.css" />
-    <link rel="stylesheet" href="css/comments/commentsForm-action.css" />
-
-    <link rel="stylesheet" href="css/comments/comment-avatar.css" />
-    <link rel="stylesheet" href="css/comments/comment-avatarImg.css" />
-    <link rel="stylesheet" href="css/comments/comment-body.css" />
-    <link rel="stylesheet" href="css/comments/comment-header.css" />
-    <link rel="stylesheet" href="css/comments/comment-msg.css" />
-
-    <link rel="stylesheet" href="css/comments/comment-headerTitle.css" />
-    <link rel="stylesheet" href="css/comments/comment-headerDate.css" />
 
     <link rel="stylesheet" href="css/sponsors/sponsor.css" />
     <link rel="stylesheet" href="css/sponsors/sponsors.css" />
@@ -171,6 +148,14 @@
 
     <link rel="stylesheet" href="css/raking/raking-filter.css" />
     <link rel="stylesheet" href="css/raking/rakingFilter-group.css" />
+    <link rel="stylesheet" href="css/raking/ranking-table.css" />
+    <link rel="stylesheet" href="css/raking/rakingTable-th.css" />
+    <link rel="stylesheet" href="css/raking/rakingTable-td.css" />
+    <link rel="stylesheet" href="css/raking/rakingTable-td.css" />
+    <link rel="stylesheet" href="css/raking/rakingTable-teamLogo.css" />
+    <link rel="stylesheet" href="css/raking/rakingTable-teamName.css" />
+    <link rel="stylesheet" href="css/raking/rankingTableTitle.css" />
+    <link rel="stylesheet" href="css/raking/rakingTable-tr.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -268,9 +253,9 @@
       <img src="./assets/img/ad-sense.jpeg" class="cf-ad-sense__img" />
     </section>
 
+    <!-- CLASSIFICAÇÂO  -->
     <main class="cf-container cf-main">
       <div class="cf-main__content">
-        <!-- CLASSIFICAÇÂO de GRUPOS -->
         <section class="cf-main__section">
           <header class="cf-main__section-header">
             <h4 class="cf-title">Classificação</h4>
@@ -286,9 +271,579 @@
               </label>
             </div>
           </div>
-          <div>
-            s
-          </div>
+          <!-- CLASSIFICAÇÂO de GRUPOS -->
+          <ul>
+            <li>
+              <div class="cf-ranking-table-title">grupo a</div>
+              <table class="cf-ranking-table">
+                <thead>
+                  <tr>
+                    <th class="cf-raking-table__th">Pos</th>
+                    <th class="cf-raking-table__th cf-raking-table__th--left">
+                      Time
+                    </th>
+                    <th class="cf-raking-table__th">P</th>
+                    <th class="cf-raking-table__th">J</th>
+                    <th class="cf-raking-table__th">V</th>
+                    <th class="cf-raking-table__th">E</th>
+                    <th class="cf-raking-table__th">D</th>
+                    <th class="cf-raking-table__th">GP</th>
+                    <th class="cf-raking-table__th">GC</th>
+                    <th class="cf-raking-table__th">SG</th>
+                    <th class="cf-raking-table__th">%</th>
+                    <th class="cf-raking-table__th">PE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      1
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/ibis.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Ibis
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      2
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/naca.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Nacional de Patos FC
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      3
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/barca.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Barcelona
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      4
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/bayer.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Bayern de Munique
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li>
+              <div class="cf-ranking-table-title">grupo B</div>
+              <table class="cf-ranking-table">
+                <thead>
+                  <tr>
+                    <th class="cf-raking-table__th">Pos</th>
+                    <th class="cf-raking-table__th cf-raking-table__th--left">
+                      Time
+                    </th>
+                    <th class="cf-raking-table__th">P</th>
+                    <th class="cf-raking-table__th">J</th>
+                    <th class="cf-raking-table__th">V</th>
+                    <th class="cf-raking-table__th">E</th>
+                    <th class="cf-raking-table__th">D</th>
+                    <th class="cf-raking-table__th">GP</th>
+                    <th class="cf-raking-table__th">GC</th>
+                    <th class="cf-raking-table__th">SG</th>
+                    <th class="cf-raking-table__th">%</th>
+                    <th class="cf-raking-table__th">PE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      1
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/ibis.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Ibis
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      2
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/naca.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Nacional de Patos FC
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      3
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/barca.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Barcelona
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                  <tr
+                    class="cf-raking-table__tr"
+                    role="button"
+                    data-toggle="modal"
+                    data-target="#teamModal"
+                  >
+                    <td class="cf-raking-table__td cf-raking-table__td--bold">
+                      4
+                    </td>
+                    <td class="cf-raking-table__td cf-raking-table__td--team">
+                      <div class="cf-raking-table__team-logo">
+                        <img
+                          class="cf-img-responsive"
+                          src="./assets/img/bayer.png"
+                        />
+                      </div>
+                      <div class="cf-raking-table__team-name">
+                        Bayern de Munique
+                      </div>
+                    </td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">20</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">0</td>
+                    <td class="cf-raking-table__td">100</td>
+                    <td class="cf-raking-table__td">23</td>
+                    <td class="cf-raking-table__td">50</td>
+                    <td class="cf-raking-table__td">90</td>
+                    <td class="cf-raking-table__td">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+
+          <!-- CLASSIFICAÇÂO GERAL -->
+          <table class="cf-ranking-table">
+            <thead>
+              <tr>
+                <th class="cf-raking-table__th">Pos</th>
+                <th class="cf-raking-table__th cf-raking-table__th--left">
+                  Time
+                </th>
+                <th class="cf-raking-table__th">P</th>
+                <th class="cf-raking-table__th">J</th>
+                <th class="cf-raking-table__th">V</th>
+                <th class="cf-raking-table__th">E</th>
+                <th class="cf-raking-table__th">D</th>
+                <th class="cf-raking-table__th">GP</th>
+                <th class="cf-raking-table__th">GC</th>
+                <th class="cf-raking-table__th">SG</th>
+                <th class="cf-raking-table__th">%</th>
+                <th class="cf-raking-table__th">PE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  1
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/ibis.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Ibis
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  2
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/naca.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Nacional de Patos FC
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  3
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/barca.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Barcelona
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  4
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/bayer.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Bayern de Munique
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  5
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/ibis.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Ibis
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  6
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/naca.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Nacional de Patos FC
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  7
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/barca.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Barcelona
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+              <tr
+                class="cf-raking-table__tr"
+                role="button"
+                data-toggle="modal"
+                data-target="#teamModal"
+              >
+                <td class="cf-raking-table__td cf-raking-table__td--bold">
+                  8
+                </td>
+                <td class="cf-raking-table__td cf-raking-table__td--team">
+                  <div class="cf-raking-table__team-logo">
+                    <img
+                      class="cf-img-responsive"
+                      src="./assets/img/bayer.png"
+                    />
+                  </div>
+                  <div class="cf-raking-table__team-name">
+                    Bayern de Munique
+                  </div>
+                </td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">20</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">0</td>
+                <td class="cf-raking-table__td">100</td>
+                <td class="cf-raking-table__td">23</td>
+                <td class="cf-raking-table__td">50</td>
+                <td class="cf-raking-table__td">90</td>
+                <td class="cf-raking-table__td">0</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
 
@@ -314,7 +869,7 @@
                 class="cf-match"
                 role="button"
                 data-toggle="modal"
-                data-target="#matchModal"
+                data-target="#teamModal"
               >
                 <div class="cf-match__phase">semifinal</div>
                 <div class="cf-match__result">
@@ -371,10 +926,10 @@
     <!-- MODAL DE PARTIDA -->
     <section
       class="modal fade"
-      id="matchModal"
+      id="teamModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="matchModalLabel"
+      aria-labelledby="teamModalLabel"
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg" role="document">

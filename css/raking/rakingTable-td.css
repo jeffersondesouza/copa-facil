@@ -1,0 +1,17 @@
+.cf-raking-table__td {
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 12px;
+  text-align: center;
+  height: 3rem;
+}
+
+.cf-raking-table__td--team {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.cf-raking-table__td--bold {
+  font-size: 14px;
+  font-weight: 700;
+}
