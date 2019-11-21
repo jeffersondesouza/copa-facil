@@ -11,6 +11,8 @@
 }
 
 .cf-match--details {
+  border-top: none;
   max-width: 47rem;
   margin: 0 auto;
+
 }
