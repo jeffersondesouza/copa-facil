@@ -108,12 +108,27 @@
 
     <link rel="stylesheet" href="css/matches/matches.css" />
     <link rel="stylesheet" href="css/matches/matchesWrapper.css" />
-    <link rel="stylesheet" href="css/match/match.css" />
-    <link rel="stylesheet" href="css/match/matches-form.css" />
-    <link rel="stylesheet" href="css/match/matches-list.css" />
-    <link rel="stylesheet" href="css/match/matches-header.css" />
-    <link rel="stylesheet" href="css/match/matches-formGroup.css" />
-    <link rel="stylesheet" href="css/match/matches-formLabel.css" />
+    <link rel="stylesheet" href="css/matches/match.css" />
+    <link rel="stylesheet" href="css/matches/matches-form.css" />
+    <link rel="stylesheet" href="css/matches/matches-list.css" />
+    <link rel="stylesheet" href="css/matches/matches-header.css" />
+    <link rel="stylesheet" href="css/matches/matches-formGroup.css" />
+    <link rel="stylesheet" href="css/matches/matches-formLabel.css" />
+    <link rel="stylesheet" href="css/matches/match-team.css" />
+    <link rel="stylesheet" href="css/matches/match-teamLogo.css" />
+    <link rel="stylesheet" href="css/matches/match-teamLogoImg.css" />
+    <link rel="stylesheet" href="css/matches/match-phase.css" />
+    <link rel="stylesheet" href="css/matches/match-result.css" />
+    <link rel="stylesheet" href="css/matches/match-score.css" />
+    <link rel="stylesheet" href="css/matches/match-scoreStatus.css" />
+
+    <link rel="stylesheet" href="css/matches/match-locationDate.css" />
+    <link rel="stylesheet" href="css/matches/match-location.css" />
+
+    <link rel="stylesheet" href="css/matches/match-footer.css" />
+    <link rel="stylesheet" href="css/matches/match-footer.css" />
+    <link rel="stylesheet" href="css/matches/match-social.css" />
+    <link rel="stylesheet" href="css/matches/match-socialItem.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -368,12 +383,12 @@
           <ul class="cf-comments">
             <li class="cf-comments__item">
               <div class="cf-comment">
-                <picture class="cf-comment__avatar">
+                <figure class="cf-comment__avatar">
                   <img
                     src="./assets/img/avatar.png"
                     class="cf-comment__avatar-img"
                   />
-                </picture>
+                </figure>
                 <div class="cf-comment__body">
                   <header class="cf-comment__header">
                     <h6 class="cf-comment__header-title">João das Couves</h6>
@@ -393,12 +408,12 @@
             </li>
             <li class="cf-comments__item">
               <div class="cf-comment">
-                <picture class="cf-comment__avatar">
+                <figure class="cf-comment__avatar">
                   <img
                     src="./assets/img/avatar.png"
                     class="cf-comment__avatar-img"
                   />
-                </picture>
+                </figure>
                 <div class="cf-comment__body">
                   <header class="cf-comment__header">
                     <h6 class="cf-comment__header-title">João das Couves</h6>
@@ -418,12 +433,12 @@
             </li>
             <li class="cf-comments__item">
               <div class="cf-comment">
-                <picture class="cf-comment__avatar">
+                <figure class="cf-comment__avatar">
                   <img
                     src="./assets/img/avatar.png"
                     class="cf-comment__avatar-img"
                   />
-                </picture>
+                </figure>
                 <div class="cf-comment__body">
                   <header class="cf-comment__header">
                     <h6 class="cf-comment__header-title">João das Couves</h6>
@@ -464,43 +479,96 @@
           <ul class="cf-matches__list">
             <li>
               <div class="cf-match">
-                <div>semifinal</div>
-                <div>
-                  <div>
-                    <img src="/" />
-                    <span>Ibis</span>
+                <div class="cf-match__phase">semifinal</div>
+                <div class="cf-match__result">
+                  <figure class="cf-match__team">
+                    <img
+                      class="cf-match__team-logo"
+                      src="./assets/img/ibis.png"
+                    />
+                    <figcaption>Ibis</figcaption>
+                  </figure>
+                  <div class="cf-match__score">
+                    <div class="cf-match__score-status">encerrado</div>
+                    <div>4</div>
+                    <div class="cf-match__score-separator">X</div>
+                    <div>0</div>
                   </div>
-                  <div>
-                    <div>encerrado</div>
-                    <div>
-                      <div>4</div>
-                      <div>x</div>
-                      <div>0</div>
-                    </div>
-                  </div>
-                  <div>
-                    <img src="/" />
-                    <span>Barcelona</span>
-                  </div>
+                  <figure class="cf-match__team">
+                    <img
+                      class="cf-match__team-logo"
+                      src="./assets/img/barca.png"
+                    />
+                    <figcaption>Barcelona</figcaption>
+                  </figure>
                 </div>
-                <footer>
-                  <div>
-                    <div>
-                      <i class="material-icons">calendar_today</i>
+                <footer class="cf-match__footer">
+                  <div class="cf-match__location-date">
+                    <div class="cf-match__location">
+                      <i class="material-icons">place</i>
                       <div>Ginásio de Esportes Central</div>
                     </div>
-                    <div>
+                    <div class="cf-match__location">
                       <i class="material-icons">calendar_today</i>
                       <div>Qui, 10/09/2019 19:30</div>
                     </div>
                   </div>
-                  <div>
-                    <div>
-                      <i class="material-icons">calendar_today</i>
+                  <div class="cf-match__social">
+                    <div class="cf-match__social-item">
+                      <i class="material-icons">chat</i>
                       <div>12</div>
                     </div>
-                    <div>
+                    <div class="cf-match__social-item">
+                      <i class="material-icons">photos</i>
+                      <div>10</div>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </li>
+            <li>
+              <div class="cf-match">
+                <div class="cf-match__phase">semifinal</div>
+                <div class="cf-match__result">
+                  <figure class="cf-match__team">
+                    <img
+                      class="cf-match__team-logo"
+                      src="./assets/img/ibis.png"
+                    />
+                    <figcaption>Ibis</figcaption>
+                  </figure>
+                  <div class="cf-match__score">
+                    <div class="cf-match__score-status">encerrado</div>
+                    <div>4</div>
+                    <div class="cf-match__score-separator">X</div>
+                    <div>0</div>
+                  </div>
+                  <figure class="cf-match__team">
+                    <img
+                      class="cf-match__team-logo"
+                      src="./assets/img/barca.png"
+                    />
+                    <figcaption>Barcelona</figcaption>
+                  </figure>
+                </div>
+                <footer class="cf-match__footer">
+                  <div class="cf-match__location-date">
+                    <div class="cf-match__location">
+                      <i class="material-icons">place</i>
+                      <div>Ginásio de Esportes Central</div>
+                    </div>
+                    <div class="cf-match__location">
                       <i class="material-icons">calendar_today</i>
+                      <div>Qui, 10/09/2019 19:30</div>
+                    </div>
+                  </div>
+                  <div class="cf-match__social">
+                    <div class="cf-match__social-item">
+                      <i class="material-icons">chat</i>
+                      <div>12</div>
+                    </div>
+                    <div class="cf-match__social-item">
+                      <i class="material-icons">photos</i>
                       <div>10</div>
                     </div>
                   </div>
@@ -517,94 +585,94 @@
       <div class="cf-container">
         <ul class="cf-sponsors__list">
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Paranaense Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
           <li class="cf-sponsors__item">
-            <picture class="cf-sponsor">
+            <figure class="cf-sponsor">
               <img
                 src="https://static-images.ifood.com.br/image/upload/f_auto,t_high/logosgde/Pizzaria%20do%20P_PIZZA_LIST06.jpg"
                 class="cf-sponsor__img"
               />
               <figcaption>Federação Paranaense de Soccer Society</figcaption>
-            </picture>
+            </figure>
           </li>
         </ul>
       </div>
