@@ -1,7 +1,6 @@
 .cf-stats-player__profile {
   align-items: center;
   display: flex;
-  flex: 0 0 12rem;
+  flex: 0 0 14rem;
   font-size: 0.75rem;
-  background: pink;
 }
