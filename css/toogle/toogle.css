@@ -26,7 +26,7 @@
   left: 0;
   top: 50%;
   position: absolute;
-  transform: translate(-2.5px, calc(-50%));
+  transform: translate(-10px, calc(-50%));
   transition: all .3s;
   width: 1rem;
 }
