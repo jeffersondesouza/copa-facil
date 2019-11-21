@@ -2,9 +2,21 @@
   display: none;
 }
 
-.cf-search-toogle:checked~.cf-search-form {
-  max-height: 40px;
-  padding: 5px 0;
 
-  width: unset;
+
+/* default */
+@media screen and (min-width: 0) {
+  .cf-search-toogle:checked~.cf-search-form {
+    max-height: 10rem;
+    padding: 5px 0;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .cf-search-toogle:checked~.cf-search-form {
+    max-height: 2.5rem;
+    padding: 5px 0;
+    width: unset;
+  }
 }
