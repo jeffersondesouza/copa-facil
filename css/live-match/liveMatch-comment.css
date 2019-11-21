@@ -2,4 +2,6 @@
   border-bottom: 1px solid #DFDFDF;
   display: flex;
   padding: 1.125rem 0.75rem;
+  max-width: 34.375rem;
+  margin: 0 auto;
 }

@@ -1,4 +1,5 @@
 .cf-match__section {
+  position: relative;
   padding-bottom: 3rem;
   padding-top: 2rem;
 }

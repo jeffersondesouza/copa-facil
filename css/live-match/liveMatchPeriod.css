@@ -1,0 +1,8 @@
+.cf-live-match__period {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}

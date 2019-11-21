@@ -153,141 +153,19 @@
 
     <link rel="stylesheet" href="css/live-match/liveMatch.css" />
     <link rel="stylesheet" href="css/live-match/liveMatch-comment.css" />
+
+    <link rel="stylesheet" href="css/live-match/liveMatch-info.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatch-team.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatchPeriod.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatchPeriod-name.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatchPeriod-time.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatchPeriod-min.css" />
+
+    <link rel="stylesheet" href="css/live-match/liveMatch-infoBar.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatch-infoAlert.css" />
+    <link rel="stylesheet" href="css/live-match/liveMatch-description.css" />
   </head>
   <body>
-    <div class="cf-match cf-match--details">
-      <div class="cf-match__section">
-        <div class="cf-match__phase">semifinal</div>
-        <div class="cf-match__result">
-          <figure class="cf-match__team">
-            <img class="cf-match__team-logo" src="./assets/img/ibis.png" />
-            <figcaption>Ibis</figcaption>
-          </figure>
-          <div class="cf-match__score">
-            <div class="cf-match__score-status">encerrado</div>
-            <div>4</div>
-            <div class="cf-match__score-separator">X</div>
-            <div>0</div>
-          </div>
-          <figure class="cf-match__team">
-            <img class="cf-match__team-logo" src="./assets/img/barca.png" />
-            <figcaption>Barcelona</figcaption>
-          </figure>
-        </div>
-        <footer class="cf-match__footer cf-match__footer--details">
-          <div class="cf-match__location">
-            <i class="material-icons">place</i>
-            <div>Ginásio de Esportes Central</div>
-          </div>
-          <div class="cf-match__location">
-            <i class="material-icons">calendar_today</i>
-            <div>Qui, 10/09/2019 19:30</div>
-          </div>
-        </footer>
-      </div>
-      <div class="cf-match__section">
-        <p>
-          Quadra de esportes central
-        </p>
-        <div class="cf-map">
-          MAPA
-        </div>
-      </div>
-      <div class="cf-match__section">
-        <h4 class="cf-title">
-          jogadores
-        </h4>
-        <div class="cf-squads">
-          <div class="cf-squad">
-            <div class="cf-squad__player">
-              <img
-                class="cf-squad__player-avatar"
-                src="./assets/img/avatar.png"
-              />
-              <div class="cf-squad__player-number">1</div>
-              <div class="cf-squad__player-name">Marcos Aranha</div>
-            </div>
-            <div class="cf-squad__player">
-              <img
-                class="cf-squad__player-avatar"
-                src="./assets/img/avatar.png"
-              />
-              <div class="cf-squad__player-number">1</div>
-              <div class="cf-squad__player-name">Aranha</div>
-              <div class="cf-squad__player-gol"></div>
-              <div
-                class="cf-squad__player-card cf-squad__player-card--yerllow"
-              ></div>
-              <div
-                class="cf-squad__player-card cf-squad__player-card--red"
-              ></div>
-              <div
-                class="cf-squad__player-card cf-squad__player-card--blue"
-              ></div>
-            </div>
-            <div class="cf-squad__player">
-              <img
-                class="cf-squad__player-avatar"
-                src="./assets/img/avatar.png"
-              />
-              <div class="cf-squad__player-number">10</div>
-              <div class="cf-squad__player-name">Marcos</div>
-              <img class="cf-squad__player-gol" src="./assets/img/ball.svg" />
-              <div
-                class="cf-squad__player-card cf-squad__player-card--yerllow"
-              ></div>
-              <div
-                class="cf-squad__player-card cf-squad__player-card--red"
-              ></div>
-              <div
-                class="cf-squad__player-card cf-squad__player-card--blue"
-              ></div>
-            </div>
-          </div>
-          <div class="cf-squad">
-            <div class="cf-squad__player">
-              <img
-                class="cf-squad__player-avatar"
-                src="./assets/img/avatar.png"
-              />
-              <div class="cf-squad__player-number">1</div>
-              <div class="cf-squad__player-name">Marcos Aranha</div>
-            </div>
-            <div class="cf-squad__player">
-              <img
-                class="cf-squad__player-avatar"
-                src="./assets/img/avatar.png"
-              />
-              <div class="cf-squad__player-number">1</div>
-              <div class="cf-squad__player-name">Marcos Aranha</div>
-              <div class="cf-squad__player-gol"></div>
-            </div>
-            <div class="cf-squad__player">
-              <img
-                class="cf-squad__player-avatar"
-                src="./assets/img/avatar.png"
-              />
-              <div class="cf-squad__player-number">1</div>
-              <div class="cf-squad__player-name">Marcos Aranha</div>
-              <div class="cf-squad__player-gol"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cf-match__section">
-        <h4 class="cf-title">
-          lances
-        </h4>
-        <ul class="cf-live-match">
-          <li class="cf-live-match__comment">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <!-- HEADER -->
     <header class="cf-header">
       <div class="cf-search">
@@ -750,7 +628,223 @@
                 role="tabpanel"
                 aria-labelledby="home-tab"
               >
-                3
+                <!-- DETALHES DO JOGO -->
+                <div class="cf-match cf-match--details">
+                  <div class="cf-match__section">
+                    <div class="cf-match__phase">semifinal</div>
+                    <div class="cf-match__result">
+                      <figure class="cf-match__team">
+                        <img
+                          class="cf-match__team-logo"
+                          src="./assets/img/ibis.png"
+                        />
+                        <figcaption>Ibis</figcaption>
+                      </figure>
+                      <div class="cf-match__score">
+                        <div class="cf-match__score-status">encerrado</div>
+                        <div>4</div>
+                        <div class="cf-match__score-separator">X</div>
+                        <div>0</div>
+                      </div>
+                      <figure class="cf-match__team">
+                        <img
+                          class="cf-match__team-logo"
+                          src="./assets/img/barca.png"
+                        />
+                        <figcaption>Barcelona</figcaption>
+                      </figure>
+                    </div>
+                    <footer class="cf-match__footer cf-match__footer--details">
+                      <div class="cf-match__location">
+                        <i class="material-icons">place</i>
+                        <div>Ginásio de Esportes Central</div>
+                      </div>
+                      <div class="cf-match__location">
+                        <i class="material-icons">calendar_today</i>
+                        <div>Qui, 10/09/2019 19:30</div>
+                      </div>
+                    </footer>
+                  </div>
+                  <div class="cf-match__section">
+                    <p>
+                      Quadra de esportes central
+                    </p>
+                    <div class="cf-map">
+                      MAPA
+                    </div>
+                  </div>
+                  <div class="cf-match__section">
+                    <h4 class="cf-title">
+                      jogadores
+                    </h4>
+                    <div class="cf-squads">
+                      <div class="cf-squad">
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Aranha</div>
+                          <div class="cf-squad__player-gol"></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--yerllow"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--red"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--blue"
+                          ></div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">10</div>
+                          <div class="cf-squad__player-name">Marcos</div>
+                          <img
+                            class="cf-squad__player-gol"
+                            src="./assets/img/ball.svg"
+                          />
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--yerllow"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--red"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--blue"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="cf-squad">
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                          <div class="cf-squad__player-gol"></div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                          <div class="cf-squad__player-gol"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cf-match__section">
+                    <h4 class="cf-title">
+                      lances
+                    </h4>
+                    <ul class="cf-live-match">
+                      <li class="cf-live-match__comment">
+                        <div class="cf-live-match__period">
+                          <div class="cf-live-match-period__name">
+                            1 Período
+                          </div>
+                          <div class="cf-live-match-period__time">48</div>
+                          <div class="cf-live-match-period__min">min</div>
+                        </div>
+                        <div class="cf-live-match__info">
+                          <div class="cf-live-match__info-bar">
+                            <div class="cf-live-match__info-alert">
+                              <div>Gool</div>
+                            </div>
+                            <div class="cf-live-match__info-player">
+                              <div class="cf-squad__player">
+                                <img
+                                  class="cf-squad__player-avatar"
+                                  src="./assets/img/avatar.png"
+                                />
+                                <div class="cf-squad__player-number">1</div>
+                                <div class="cf-squad__player-name">Aranha</div>
+                                <div class="cf-squad__player-gol"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="cf-live-match__description">
+                            Fim de jogo em pelo Brasileirão! Ibis vence na casa
+                            do Barça e fica muito próximo do título!
+                          </p>
+                        </div>
+                        <div class="cf-live-match__team">
+                          <figure class="cf-match__team">
+                            <img
+                              class="cf-match__team-logo"
+                              src="./assets/img/barca.png"
+                            />
+                            <figcaption>Barcelona</figcaption>
+                          </figure>
+                        </div>
+                      </li>
+                      <li class="cf-live-match__comment">
+                        <div class="cf-live-match__period">
+                          <div class="cf-live-match-period__name">
+                            1 Período
+                          </div>
+                          <div class="cf-live-match-period__time">48</div>
+                          <div class="cf-live-match-period__min">min</div>
+                        </div>
+                        <div class="cf-live-match__info">
+                          <div class="cf-live-match__info-bar">
+                            <div class="cf-live-match__info-alert">
+                              <div>Gool</div>
+                            </div>
+                            <div class="cf-live-match__info-player">
+                              <div class="cf-squad__player">
+                                <img
+                                  class="cf-squad__player-avatar"
+                                  src="./assets/img/avatar.png"
+                                />
+                                <div class="cf-squad__player-number">1</div>
+                                <div class="cf-squad__player-name">Aranha</div>
+                                <div class="cf-squad__player-gol"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="cf-live-match__description">
+                            Fim de jogo em pelo Brasileirão! Ibis vence na casa
+                            do Barça e fica muito próximo do título!
+                          </p>
+                        </div>
+                        <div class="cf-live-match__team">
+                          <figure class="cf-match__team">
+                            <img
+                              class="cf-match__team-logo"
+                              src="./assets/img/barca.png"
+                            />
+                            <figcaption>Barcelona</figcaption>
+                          </figure>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               <div
                 class="tab-pane fade"
@@ -870,6 +964,7 @@
                 role="tabpanel"
                 aria-labelledby="contact-tab"
               >
+                <!-- MÍDIAS -->
                 <ul class="cf-midias">
                   <li>
                     <div class="cf-midia">
