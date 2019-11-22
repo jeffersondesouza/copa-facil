@@ -332,7 +332,7 @@
             </div>
           </div>
           <!-- CLASSIFICAÇÃO de GRUPOS -->
-          <ul >
+          <ul>
             <li class="cf-scroll-container">
               <div class="cf-ranking-table-title">grupo a</div>
               <table class="cf-ranking-table">
@@ -931,7 +931,7 @@
                 class="cf-match"
                 role="button"
                 data-toggle="modal"
-                data-target="#teamModal"
+                data-target="#matchModal"
               >
                 <div class="cf-match__phase">semifinal</div>
                 <div class="cf-match__result">
@@ -985,7 +985,7 @@
       </div>
     </main>
 
-    <!-- MODAL DE PARTIDA -->
+    <!-- MODAL DE ESTATÍSTICAS -->
     <section
       class="modal fade"
       id="teamModal"
@@ -1166,6 +1166,458 @@
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DE PARTIDA -->
+    <section
+      class="modal fade"
+      id="matchModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="matchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link cf-uppercase active"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                  >Jogo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link cf-uppercase"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Comentários</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link cf-uppercase"
+                  id="contact-tab"
+                  data-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Mídias</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <!-- DETALHES DO JOGO -->
+                <div class="cf-match cf-match--details">
+                  <div class="cf-match__section">
+                    <div class="cf-match__phase">semifinal</div>
+                    <div class="cf-match__result">
+                      <figure class="cf-match__team">
+                        <img
+                          class="cf-match__team-logo"
+                          src="./assets/img/ibis.png"
+                        />
+                        <figcaption>Ibis</figcaption>
+                      </figure>
+                      <div class="cf-match__score">
+                        <div class="cf-match__score-status">encerrado</div>
+                        <div>4</div>
+                        <div class="cf-match__score-separator">X</div>
+                        <div>0</div>
+                      </div>
+                      <figure class="cf-match__team">
+                        <img
+                          class="cf-match__team-logo"
+                          src="./assets/img/barca.png"
+                        />
+                        <figcaption>Barcelona</figcaption>
+                      </figure>
+                    </div>
+                    <footer class="cf-match__footer cf-match__footer--details">
+                      <div class="cf-match__location">
+                        <i class="material-icons">place</i>
+                        <div>Ginásio de Esportes Central</div>
+                      </div>
+                      <div class="cf-match__location">
+                        <i class="material-icons">calendar_today</i>
+                        <div>Qui, 10/09/2019 19:30</div>
+                      </div>
+                    </footer>
+                  </div>
+                  <div class="cf-match__section">
+                    <p>
+                      Quadra de esportes central
+                    </p>
+                    <div class="cf-map">
+                      MAPA
+                    </div>
+                  </div>
+                  <div class="cf-match__section">
+                    <h4 class="cf-title">
+                      jogadores
+                    </h4>
+                    <div class="cf-squads">
+                      <div class="cf-squad">
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Aranha</div>
+                          <div class="cf-squad__player-gol"></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--yerllow"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--red"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--blue"
+                          ></div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">10</div>
+                          <div class="cf-squad__player-name">Marcos</div>
+                          <img
+                            class="cf-squad__player-gol"
+                            src="./assets/img/ball.svg"
+                          />
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--yerllow"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--red"
+                          ></div>
+                          <div
+                            class="cf-squad__player-card cf-squad__player-card--blue"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="cf-squad">
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                          <div class="cf-squad__player-gol"></div>
+                        </div>
+                        <div class="cf-squad__player">
+                          <img
+                            class="cf-squad__player-avatar"
+                            src="./assets/img/avatar.png"
+                          />
+                          <div class="cf-squad__player-number">1</div>
+                          <div class="cf-squad__player-name">Marcos Aranha</div>
+                          <div class="cf-squad__player-gol"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cf-match__section">
+                    <h4 class="cf-title">
+                      lances
+                    </h4>
+                    <ul class="cf-live-match">
+                      <li class="cf-live-match__comment">
+                        <div class="cf-live-match__period">
+                          <div class="cf-live-match-period__name">
+                            1 Período
+                          </div>
+                          <div class="cf-live-match-period__time">48</div>
+                          <div class="cf-live-match-period__min">min</div>
+                        </div>
+                        <div class="cf-live-match__info">
+                          <div class="cf-live-match__info-bar">
+                            <div class="cf-live-match__info-alert">
+                              <div>Gool</div>
+                            </div>
+                            <div class="cf-live-match__info-player">
+                              <div class="cf-squad__player">
+                                <img
+                                  class="cf-squad__player-avatar"
+                                  src="./assets/img/avatar.png"
+                                />
+                                <div class="cf-squad__player-number">1</div>
+                                <div class="cf-squad__player-name">Aranha</div>
+                                <div class="cf-squad__player-gol"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="cf-live-match__description">
+                            Fim de jogo em pelo Brasileirão! Ibis vence na casa
+                            do Barça e fica muito próximo do título!
+                          </p>
+                        </div>
+                        <div class="cf-live-match__team">
+                          <figure class="cf-match__team">
+                            <img
+                              class="cf-match__team-logo"
+                              src="./assets/img/barca.png"
+                            />
+                            <figcaption>Barcelona</figcaption>
+                          </figure>
+                        </div>
+                      </li>
+                      <li class="cf-live-match__comment">
+                        <div class="cf-live-match__period">
+                          <div class="cf-live-match-period__name">
+                            1 Período
+                          </div>
+                          <div class="cf-live-match-period__time">48</div>
+                          <div class="cf-live-match-period__min">min</div>
+                        </div>
+                        <div class="cf-live-match__info">
+                          <div class="cf-live-match__info-bar">
+                            <div class="cf-live-match__info-alert">
+                              <div>Gool</div>
+                            </div>
+                            <div class="cf-live-match__info-player">
+                              <div class="cf-squad__player">
+                                <img
+                                  class="cf-squad__player-avatar"
+                                  src="./assets/img/avatar.png"
+                                />
+                                <div class="cf-squad__player-number">1</div>
+                                <div class="cf-squad__player-name">Aranha</div>
+                                <div class="cf-squad__player-gol"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="cf-live-match__description">
+                            Fim de jogo em pelo Brasileirão! Ibis vence na casa
+                            do Barça e fica muito próximo do título!
+                          </p>
+                        </div>
+                        <div class="cf-live-match__team">
+                          <figure class="cf-match__team">
+                            <img
+                              class="cf-match__team-logo"
+                              src="./assets/img/barca.png"
+                            />
+                            <figcaption>Barcelona</figcaption>
+                          </figure>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <!-- TAB COMENTÁRIOS -->
+                <section class="cf-main__section">
+                  <header
+                    class="cf-main__section-header cf-main__section-header--spaced"
+                  >
+                    <h4 class="cf-title">comentários</h4>
+                  </header>
+                  <form class="cf-comments-form cf-comments-form--small">
+                    <textarea
+                      placeholder="Digite seu comentário"
+                      class="cf-comments-form__input"
+                    ></textarea>
+                    <div class="cf-comments-form__action">
+                      <button class="cf-btn cf-btn--primary cf-btn--small">
+                        Enviar
+                      </button>
+                    </div>
+                  </form>
+                  <ul class="cf-comments">
+                    <li class="cf-comments__item">
+                      <div class="cf-comment">
+                        <figure class="cf-comment__avatar">
+                          <img
+                            src="./assets/img/avatar.png"
+                            class="cf-comment__avatar-img"
+                          />
+                        </figure>
+                        <div class="cf-comment__body">
+                          <header class="cf-comment__header">
+                            <h6 class="cf-comment__header-title">
+                              João das Couves
+                            </h6>
+                            <time class="cf-comment__header-date"
+                              >25/10/2019 14:17</time
+                            >
+                          </header>
+                          <p class="cf-comment__msg">
+                            Mussum Ipsum, cacilds vidis litro abertis. Delegadis
+                            gente finis, bibendum egestas augue arcu ut est.
+                            Interagi no mé, cursus quis, vehicula ac nisi. Mais
+                            vale um bebadis conhecidiss, que um alcoolatra
+                            anonimis. Em pé sem cair, deitado sem dormir,
+                            sentado sem cochilar e fazendo pose.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="cf-comments__item">
+                      <div class="cf-comment">
+                        <figure class="cf-comment__avatar">
+                          <img
+                            src="./assets/img/avatar.png"
+                            class="cf-comment__avatar-img"
+                          />
+                        </figure>
+                        <div class="cf-comment__body">
+                          <header class="cf-comment__header">
+                            <h6 class="cf-comment__header-title">
+                              João das Couves
+                            </h6>
+                            <time class="cf-comment__header-date"
+                              >25/10/2019 14:17</time
+                            >
+                          </header>
+                          <p class="cf-comment__msg">
+                            Mussum Ipsum, cacilds vidis litro abertis. Delegadis
+                            gente finis, bibendum egestas augue arcu ut est.
+                            Interagi no mé, cursus quis, vehicula ac nisi. Mais
+                            vale um bebadis conhecidiss, que um alcoolatra
+                            anonimis. Em pé sem cair, deitado sem dormir,
+                            sentado sem cochilar e fazendo pose.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="cf-comments__item">
+                      <div class="cf-comment">
+                        <figure class="cf-comment__avatar">
+                          <img
+                            src="./assets/img/avatar.png"
+                            class="cf-comment__avatar-img"
+                          />
+                        </figure>
+                        <div class="cf-comment__body">
+                          <header class="cf-comment__header">
+                            <h6 class="cf-comment__header-title">
+                              João das Couves
+                            </h6>
+                            <time class="cf-comment__header-date"
+                              >25/10/2019 14:17</time
+                            >
+                          </header>
+                          <p class="cf-comment__msg">
+                            Mussum Ipsum, cacilds vidis litro abertis. Delegadis
+                            gente finis, bibendum egestas augue arcu ut est.
+                            Interagi no mé, cursus quis, vehicula ac nisi. Mais
+                            vale um bebadis conhecidiss, que um alcoolatra
+                            anonimis. Em pé sem cair, deitado sem dormir,
+                            sentado sem cochilar e fazendo pose.
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                <!-- MÍDIAS -->
+                <ul class="cf-midias">
+                  <li>
+                    <div class="cf-midia">
+                      <img class="cf-midia__img" src="http://abre.ai/auD2" />
+                      <div class="cf-midia__info">
+                        <div class="cf-midia__date">Sex, 20/10/2019</div>
+                        <div class="cf-midia__share">
+                          <i class="material-icons">share</i>
+                          <i class="material-icons">thumb_up</i>
+                          <span>10</span>
+                        </div>
+                      </div>
+                      <p class="cf-midia__description">
+                        Início da grande final
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cf-midia">
+                      <img class="cf-midia__img" src="http://abre.ai/auD2" />
+                      <div class="cf-midia__info">
+                        <div class="cf-midia__date">Sex, 20/10/2019</div>
+                        <div class="cf-midia__share">
+                          <i class="material-icons">share</i>
+                          <i class="material-icons">thumb_up</i>
+                          <span>10</span>
+                        </div>
+                      </div>
+                      <p class="cf-midia__description">
+                        Início da grande final
+                      </p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="cf-midia">
+                      <img class="cf-midia__img" src="http://abre.ai/auD2" />
+                      <div class="cf-midia__info">
+                        <div class="cf-midia__date">Sex, 20/10/2019</div>
+                        <div class="cf-midia__share">
+                          <i class="material-icons">share</i>
+                          <i class="material-icons">thumb_up</i>
+                          <span>10</span>
+                        </div>
+                      </div>
+                      <p class="cf-midia__description">
+                        Início da grande final
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
