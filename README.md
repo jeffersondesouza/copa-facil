@@ -18,3 +18,7 @@
   - cf-btn__label (estilizar um label que é filho __ de botão)
   - cf-btn--red (botão vermelho)
   - cf-btn-main (btn-main apenas um nome composto)
+
+
+### Bootstrap
+  - Como o projeto destino faz uso do Angular (ao menos foi a impressão que tive), algums componentes como Modal, Tab devem está sendo usados via libs do bootstrap, assim, mantive os modais e tabs com o bootstrap.
