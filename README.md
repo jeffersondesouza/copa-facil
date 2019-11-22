@@ -7,6 +7,14 @@
 
 ### CSS
 
+- Não Se assuste com a quantidade de arquivos CSS! Para facilitar a manutenção foi feito uso do Atomic Design, onde cada class ganha um arquivo. Dessa forma facilita-se a manutenção e reutilização;
+
+
 - Todas as classes do CSS levam o prefíxo cf(Copa Fácil, ex: cf-header) para evitar sobrescrições e conflitos nas páginas que não foram alteradas e continuam usando o bootstrap;
-- A organização do CSS seguiu o atomic design, onde cada classe representa um arquivo css, assim a manutenção do cídigo fica melhorada;
-- Além do atomic design foi feito uso do BEM; 
+
+
+- Além do atomic design foi feito uso do BEM (Block, Element, Modifier) p padronizar a nomeação das classes do css. Por ex:
+  - cf-btn (estilizar um botão)
+  - cf-btn__label (estilizar um label que é filho __ de botão)
+  - cf-btn--red (botão vermelho)
+  - cf-btn-main (btn-main apenas um nome composto)
